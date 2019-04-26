@@ -2,11 +2,21 @@
 /* Noy Tvili 308426790 */
 
 
-#include Editor.h
+#include "Editor.h"
+#include <string>
+#include <iostream>
 using namespace std;
+
+Editor::Editor() {
+    cout << "Editor constructor- ckeck" << endl;  //after chech- delete
+    document;
+    this->userInput = "";
+    loop();
+}
 
 void Editor::loop(){
     string command;
+    while (this->)
 
     cin >> command;
 
