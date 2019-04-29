@@ -21,7 +21,7 @@ class Document {
         void insertNewLine_After(const string& std);
         int getNum_Of_Line();
         void changeCurrent_Line(const string& newString);
-
+        string lineBy_Index(const int& index);
         /*
         void insertLineByIndex(const int&,const std::string&);
         bool setNewString(const std::string&,const std::string&);
