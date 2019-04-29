@@ -23,6 +23,8 @@ void Document::setCurrent_Line (const int& index) {
 string Document::getString_Line() { //get the string line in the document
     if(this->document_String.size() == 0)
         return "";
+    /*if(this->current_Line == 0){   //מארק עשה את התנאי אבל אני חושבת שמיותר
+        return this->document_String.at(this->mCurrentLine ); */
     return this->document_String.at(this->current_Line -1); //the #1 line = at(0)
 }
 
@@ -54,4 +56,11 @@ int Document::getNum_Of_Line(){
 void Document::changeCurrent_Line(const string& newString){
     this->document_String[this->current_Line -1] = newString;
 }
+
+string Document::lineBy_Index(const int& index){
+    return this->document_String[index];
+}
+
+
+
 
