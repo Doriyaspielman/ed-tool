@@ -14,4 +14,7 @@ private:
 public:
     Editor();
     void loop();    
-}
+    bool is_number(const string& s);
+    int isStringSwichOldNew(const string& s);
+
+};
