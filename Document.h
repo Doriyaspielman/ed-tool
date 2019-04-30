@@ -26,4 +26,4 @@ class Document {
         void insertLineByIndex(const int&,const std::string&);
         bool setNewString(const std::string&,const std::string&);
         */
-};
+}; 
