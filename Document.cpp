@@ -8,7 +8,6 @@ using namespace std;
 
 Document::Document(){
     this->current_Line = 0;
-    cout << "document constructor" << endl;   // need to delete afer
 }
 
 int Document::getCurrent_Line() const{
@@ -23,8 +22,9 @@ void Document::setCurrent_Line (const int& index) {
 string Document::getString_Line() { //get the string line in the document
     if(this->document_String.size() == 0)
         return "";
-    /*if(this->current_Line == 0){   //מארק עשה את התנאי אבל אני חושבת שמיותר
-        return this->document_String.at(this->mCurrentLine ); */
+    if(this->current_Line == 0){   //מארק עשה את התנאי אבל אני חושבת שמיותר
+        return this->document_String.at(this->current_Line ); 
+    }
     return this->document_String.at(this->current_Line -1); //the #1 line = at(0)
 }
 
